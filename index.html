@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.png"/>
+    <title>CAR19</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">CAR19</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="docs.html">About us</a></li>
+          </ul>
+        </nav>
+        <form action="">
+          <input type="text" placeholder="Search" />
+        </form>
+      </div>
+    </div>
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>COVID-19 and Agriculture Research in Rwanda.</h1>
+          <p>
+            The project is a research project that is set up to study COVID-19
+            impact on Agriculture in Rwanda. Agriculture is the main stay of
+            some of the local communities and now with COVID-19, there could be
+            greater impact that negatively affects these communities. The
+            research hopes to study the impact and relationship between these
+            two.
+          </p>
+          <a href="features.html" class="btn btn-outline">Explore</a>
+        </div>
+
+        <div class="showcase-form card">
+          <h2>Login</h2>
+          <form name="contact" method="POST">
+            <div class="form-control">
+              <input 
+                type="email" 
+                name="email" 
+                placeholder="Email" 
+                required 
+            />
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <input type="submit" value="Login" class="btn btn-primary" />
+          </form>
+          <p>
+            You don't have account?<a href="#" class="text-primary">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- stats  -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading text-center my-1">Health information</h3>
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <i class="fas fa-briefcase-medical fa-3x text-darklight"></i>
+            <h3 class="text-darklight">12,975</h3>
+            <p class="text-secondary">Total cases</p>
+          </div>
+          <div>
+            <i class="fas fa-running fa-3x text-success"></i>
+            <h3 class="text-success">8,420</h3>
+            <p class="text-secondary text-success">Recovered</p>
+          </div>
+          <div>
+            <i class="fas fa-book-dead fa-3x"></i>
+            <h3 class="text-danger">174</h3>
+            <p class="text-danger">Deaths</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cloud -->
+    <section class="cloud py-2">
+      <div id="map"></div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <h1>CAR19.</h1>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
